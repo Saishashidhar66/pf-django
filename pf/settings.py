@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'g7w748*gg&smqy=&-4@(q45i(i0y78($(c9@+-jtgqzgnxbfr6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pfdjango.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
