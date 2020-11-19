@@ -29,8 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-django_heroku.settings(locals())
-TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -135,4 +134,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+django_heroku.settings(locals())
+TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
 
